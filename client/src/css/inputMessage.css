@@ -1,0 +1,99 @@
+.func-button, .input-mess {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.func-button {
+    
+}
+
+.func-button_item {
+    width: 45%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+}
+
+.func-button_item li {
+    font-size: 22px;
+    width: calc(5px + 2vw);
+    height: calc(5px + 2vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.func-button_item li:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.func-button_item li img {
+    width: 70%;
+    object-fit: fill;
+}
+
+.input-mess{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.input-mess input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-size: 15px;
+    outline: none;
+    border-top: 1px solid black;
+}
+
+.input-mess input:focus {
+    border-top: 1px solid rgb(0, 132, 255);
+}
+
+.input-mess_left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+}
+
+.input-mess_left-list {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+}
+
+.input-mess_left-list li {
+    font-size: 23px;
+    width: calc(5px + 2vw);
+    height: calc(5px + 2vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.input-mess_left-list li:hover{
+    background-color: rgb(231, 231, 231);
+}
+

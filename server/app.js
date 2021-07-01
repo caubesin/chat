@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 const http = require('http');
+const cors = require('cors');
 const ConnectIO = require('./config/socketIO');
 const exSession = require('express-session');
 const bodyParser = require('body-parser');
 const passport = require('passport');
-const cors = require('cors');
 require('./config/passport');
 require('./config/mongoDB');
 
@@ -29,6 +29,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+const corsOptions = {
+    origin: process.env.CLIENT_URL,
+    credentials: true,
+    header: "Origin, X-Request-With, Content-Type, Accept",
+    optionsSuccessStatus: 200,
+    methods: "GET, POST, PUT"
+}
+
+app.use(cors(corsOptions));
 
 //todo Tao Server
 const server = http.createServer(app).listen(process.env.PORT, () => {
@@ -46,3 +55,4 @@ app.get('/', (req, res) =>{
 app.use('/chat', chat);
 app.use('/authenticate', authenticate);
 app.use('/user', user);
+

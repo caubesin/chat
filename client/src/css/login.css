@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap);
+
+.login-form {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-login {
+    position: relative;
+    width: 45%;
+    height: 75%;
+    box-shadow: 1px 1px 10px rgb(209, 209, 209);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.form-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 168, 255);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.form-img img {
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+}
+
+.main-login-form {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container img {
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.container > p {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.form > label {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0 5px 0;
+    font-weight: 700;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgba(141, 141, 141, 0.404);
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.extend-log, .extend-signup  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0 20px 0;
+}
+
+.remember-checkbox {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(173, 173, 173);
+}
+
+.remember-checkbox input {
+    width: 20%;
+}
+
+.remember-checkbox label {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600px;
+}
+
+.extend-log p {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(255, 51, 136);
+}
+
+.MuiBtn {
+    width: 100%;
+    padding: 10px 5px !important;
+    background-color: rgb(1, 168, 255) !important;
+    font-weight: bold;
+}
+
+.MuiBtn span {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 12px;
+}
+
+.other-login {
+    width: 100%;
+    height: auto;
+    margin: 25px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(173, 173, 173);
+}
+
+.other-login p {
+    position: absolute;
+    font-family: 'Roboto', sans-serif !important;
+    background-color: white;
+    padding: 0 10px;
+    font-size: 13px;
+    color: rgb(173, 173, 173);
+}
+
+#facebook-login-button {
+    display: block !important;
+    padding-left: 20px !important;
+    background-color: white !important;
+    color: black;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 1px 1px 1px rgb(233, 233, 233);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.facebook-icon {
+    position: relative;
+    width: 100%;
+}
+
+.facebook-icon i {
+    position: absolute;
+    left: 0;
+    color: rgb(0, 119, 255);
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.form > p:last-child {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgb(173, 173, 173);
+}
+
+.form > p:last-child span {
+    color: rgb(255, 51, 136);
+    cursor: pointer;
+}
+
+.MuiAlert-root {
+    width: 100%;
+}
+
+.MuiAlert-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.MuiCircularProgress-root {
+    width: 21px !important;
+    height: 21px !important;
+}
+
+.MuiCircularProgress-svg {
+    color: white;
+}
+
+.MuiButtonBase-root:disabled {
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+

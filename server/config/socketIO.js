@@ -2,13 +2,13 @@ const socketIO = require('socket.io');
 require('dotenv').config();
 const {addMessage} = require('../helper/message_Helper');
 
-
 const createIOConnect = (server) => {
     const io = socketIO(server, {
         cors: {
             origin: process.env.CLIENT_URL,
             methods: ["GET", "POST"],
-            credentials: true
+            credentials: true,
+            allowedHeaders: ["*"],
         }
     });
     

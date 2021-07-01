@@ -1,0 +1,24 @@
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.extend-signup {
+    margin: 0;
+}
+
+.MuiTypography-body1 {
+    font-family: 'Roboto', sans-serif !important;
+    color: rgb(173, 173, 173);
+    font-size: 13px !important;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.sign-form-img {
+    background-color: rgb(1, 168, 255);
+    clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 25% 100%, 0 50%, 25% 0);
+}
+
+
